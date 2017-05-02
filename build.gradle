@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin:'application'
+
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+  compile 'com.xebialabs.restito:restito:0.9.0' //  Restito dependency
+}
+
+mainClassName = "gni.buts.server.ButsServer"
