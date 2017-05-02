@@ -1,4 +1,12 @@
 {
-  "GET" : {}
-
+  "httpMethod" : "GET",
+  "uri": "localhost:8484/ping",
+  "postBody":" test post",
+  "params" : {
+    "paramA" : "valueA"
+  },
+  "delayPeriod": 1,
+  "response": "test response",
+  "postBodyAfterDelay" : "test body after delay",
+  "postUri" : "localhost:8888/ping"
 }
