@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-  compile 'com.xebialabs.restito:restito:0.9.0' //  Restito dependency
+  compile 'com.xebialabs.restito:restito:0.9.1' //  Restito dependency
 }
 
 mainClassName = "gni.buts.server.ButsServer"

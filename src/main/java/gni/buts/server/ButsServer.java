@@ -11,9 +11,11 @@ public class ButsServer {
 
     public static void main(String[] args) throws Exception {
 
-        final StubServer server = new StubServer().run();
+        final StubServer server = new StubServer(8844).run();
 
-        whenHttp(server).match(get("/hello")).then(contentType("text/html"), stringContent("World!"));
+        whenHttp(server).match(get("/ping")).then(contentType("text/html"), stringContent("Pong!"));
+
+
         
         while (true) { Thread.sleep(10000); }
 
