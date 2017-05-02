@@ -1,16 +1,13 @@
 package gni.buts.model;
 
-
-import lombok.Data;
-
 import java.io.Serializable;
 import java.util.Map;
 
-/**
- * Created by MU53YL on 2-5-2017.
- */
+import lombok.Data;
+
+
 @Data
-public class RestStub implements Serializable{
+public class RestStub implements Serializable {
 
     private String httpMethod;
     private String uri;
